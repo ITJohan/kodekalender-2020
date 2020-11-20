@@ -3,6 +3,7 @@ import NavBar from './components/NavBar';
 import CodingChallengePage from './components/CodingChallengePage';
 import GraphChallenge from './challenges/GraphChallenge';
 import CipherChallenge from './challenges/CipherChallenge';
+import CountDown from './challenges/CountDown';
 
 const App = () => {
   return (
@@ -16,10 +17,10 @@ const App = () => {
           <CodingChallengePage title='Andre advent' Challenge={CipherChallenge} />
         </Route>
         <Route path='/3'>
-          TODO...
+          <CodingChallengePage title='Tredje advent' Challenge={CountDown} />
         </Route>
         <Route path='/4'>
-          TODO...
+          <CodingChallengePage title='Fjerde advent' Challenge={CountDown} />
         </Route>
         <Route path='/'>
           Velkommen til Netcompany's kodekalender 2020!
